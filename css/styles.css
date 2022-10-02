@@ -14,6 +14,31 @@ color: var(--primary-text-color);
   font-family: roboto,sans-serif;
  letter-spacing: 0.03em;
  }
+ h1,
+ h2,
+ h3,
+ p,
+ ul{
+   margin: 0;
+   padding: 0;
+ }
+.section
+{padding : 94px 0;
+   outline : 2px solid tomato;
+}
+
+   
+
+.container{
+   width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+   outline: 2px solid tomato;
+}
+.header{
+   padding-top: 24px;
+   border-bottom: 1px solid #ECECEC;
+}
 
   .logo {
     color: var(--accent-color);
@@ -21,7 +46,9 @@ color: var(--primary-text-color);
       font-weight: 700;
       font-size: 26px;
       line-height: 1.19;
-         text-decoration: none;  }
+         text-decoration: none; 
+     
+    }
 
  .logo.first {
     color: #000000;
@@ -52,6 +79,7 @@ color: var(--primary-text-color);
       line-height: 1.14;
       letter-spacing: 0.02em;
       text-decoration: none;
+      outline: 2px solid tomato;
  }
  .site-nav .link.current {
   color: var(--accent-color);
@@ -71,6 +99,7 @@ font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
    text-decoration: none;
+   outline: 2px solid tomato;
  }
  .contacts .link:hover,
  .contacts .link:focus {
@@ -83,10 +112,12 @@ color: var(--accent-color);
  /* Basement */
  .basement{
    background-color:var(--footer-background-color);
-   
+   padding: 60px 0;
  }
  .logo.second {
     color: var(--primary-white-color);
+   outline: 2px solid tomato;
+   margin-bottom: 20px;
  }
 
  .basement {
@@ -94,22 +125,27 @@ color: var(--accent-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+   outline: 2px solid tomato;
     
  }
 
  .map {
     color: var(--primary-white-color);
    text-decoration: none;
+   margin-bottom: 9px;
  }
 
  .contacts-basement {
     color: var(--contacts-basement-color);
    text-decoration: none;
+   margin-bottom: 9px;
  }
 
  /* Hero index*/
  .hero{
    background-color: var(--footer-background-color);
+   padding: 200px 0;
+
  }
 .hero-title{
    color: var(--primary-white-color);
@@ -120,6 +156,8 @@ color: var(--accent-color);
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
+      margin-bottom: 30px;
+      
 }
 .button-hero {
    color: var(--primary-white-color);
@@ -131,6 +169,9 @@ color: var(--accent-color);
    letter-spacing: 0.06em;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
+   outline: 2px solid tomato;
+   
+   
 }
 
 /* sections index*/
@@ -140,13 +181,14 @@ font-weight: 700;
    font-size: 36px;
    line-height: 1.17;
    text-align: center;
+   margin-bottom: 50px;
 }
 .benefits-list .title{
    color: var(--primary-text-color);
    font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
-  
+  margin-bottom: 10px;
       text-transform: uppercase;
 }
 .benefits-list .description{
@@ -157,13 +199,14 @@ font-weight: 700;
 }
 .staff{
    background-color: var(--primary-button-color);
+   
 }
 .staff-list .name{
    color: var(--primary-text-color);
    font-weight: 500;
       font-size: 16px;
       line-height: 1.19;
-       
+    margin-bottom: 10px;   
       }
 .staff-list .profession{
    color: var(--secondary-text-color);
