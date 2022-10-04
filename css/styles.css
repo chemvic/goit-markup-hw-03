@@ -22,6 +22,9 @@ color: var(--primary-text-color);
    margin: 0;
    padding: 0;
  }
+ .list {
+    list-style: none;
+ }
 .section
 {padding : 94px 0;
    outline : 2px solid tomato;
@@ -34,10 +37,14 @@ color: var(--primary-text-color);
    padding: 0 15px;
    margin: 0 auto;
    outline: 2px solid tomato;
+  
 }
-.header{
-   padding-top: 24px;
+.header .container{
+   padding: 32px 0;
    border-bottom: 1px solid #ECECEC;
+   display: flex; 
+   align-items: center;
+
 }
 
   .logo {
@@ -46,18 +53,18 @@ color: var(--primary-text-color);
       font-weight: 700;
       font-size: 26px;
       line-height: 1.19;
-         text-decoration: none; 
-     
+      text-decoration: none; 
+        
     }
 
  .logo.first {
     color: #000000;
-               }
+       display: block;
+     align-items: center;
+      /* margin-bottom: 25px;   */
+   margin-right: 93px;      }
 
- .list {
-    list-style: none;
- }
-
+ 
  .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -72,7 +79,19 @@ color: var(--primary-text-color);
  }
 
 /* site-nav */
+.site-nav.list{
+   display: flex;
+}
+.site-nav .item+ .item{
+   margin-left: 50px;
+}
+.site-nav .item:last-child{
+   margin-right: auto;
+}
  .site-nav .link {
+   display: block;
+   padding:15px 0;
+   
    color: var(--primary-text-color);
    font-weight: 500;
       font-size: 14px;
@@ -80,6 +99,7 @@ color: var(--primary-text-color);
       letter-spacing: 0.02em;
       text-decoration: none;
       outline: 2px solid tomato;
+      
  }
  .site-nav .link.current {
   color: var(--accent-color);
@@ -92,6 +112,16 @@ color: var(--primary-text-color);
  }
 
  /* contacts */
+ .contacts.list{
+   display: flex;
+   margin-left: auto;
+ }
+ .contacts .item+ .item{
+     margin-left:50px;
+     
+ }
+
+
  .contacts .link {
 color: var(--secondary-text-color);
 font-weight: 500;
@@ -100,6 +130,8 @@ font-weight: 500;
    letter-spacing: 0.02em;
    text-decoration: none;
    outline: 2px solid tomato;
+    display: block;
+         padding: 15px 0;
  }
  .contacts .link:hover,
  .contacts .link:focus {
@@ -109,6 +141,7 @@ color: var(--accent-color);
  .contacts-basement.link:focus {
 color: var(--accent-color); 
 }
+
  /* Basement */
  .basement{
    background-color:var(--footer-background-color);
