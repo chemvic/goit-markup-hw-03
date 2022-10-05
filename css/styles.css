@@ -40,7 +40,7 @@ color: var(--primary-text-color);
   
 }
 .header .container{
-   padding: 32px 0;
+   /* padding: 32px 15px; */
    border-bottom: 1px solid #ECECEC;
    display: flex; 
    align-items: center;
@@ -90,7 +90,7 @@ color: var(--primary-text-color);
 }
  .site-nav .link {
    display: block;
-   padding:15px 0;
+   padding:32px 0;
    
    color: var(--primary-text-color);
    font-weight: 500;
@@ -116,7 +116,7 @@ color: var(--primary-text-color);
    display: flex;
    margin-left: auto;
  }
- .contacts .item+ .item{
+ .contacts .item + .item{
      margin-left:50px;
      
  }
@@ -131,7 +131,7 @@ font-weight: 500;
    text-decoration: none;
    outline: 2px solid tomato;
     display: block;
-         padding: 15px 0;
+         padding: 32px 0;
  }
  .contacts .link:hover,
  .contacts .link:focus {
@@ -149,8 +149,7 @@ color: var(--accent-color);
  }
  .logo.second {
     color: var(--primary-white-color);
-   outline: 2px solid tomato;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
  }
 
  .basement {
@@ -158,21 +157,22 @@ color: var(--accent-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-   outline: 2px solid tomato;
+   padding: 60px 0;
     
  }
 
  .map {
     color: var(--primary-white-color);
    text-decoration: none;
-   margin-bottom: 9px;
- }
+    }
 
  .contacts-basement {
     color: var(--contacts-basement-color);
    text-decoration: none;
+   }
+.basement .item:not(:last-child){
    margin-bottom: 9px;
- }
+}
 
  /* Hero index*/
  .hero{
@@ -183,7 +183,6 @@ color: var(--accent-color);
  }
 .hero-title{
    color: var(--primary-white-color);
-   
       font-weight: 900;
       font-size: 44px;
       line-height: 1.36;        
@@ -191,8 +190,7 @@ color: var(--accent-color);
       letter-spacing: 0.06em;
       text-transform: uppercase;
       margin-bottom: 30px;
-      
-}
+     }
 .button-hero {
    color: var(--primary-white-color);
    background-color: var(--accent-color);
@@ -201,53 +199,102 @@ color: var(--accent-color);
    font-size: 16px;
    line-height: 1.88;
    letter-spacing: 0.06em;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
-     padding: 10px 32px;
-   text-align: center;
+   padding: 10px 32px;
+   border:0;
 }
 
 /* sections index*/
 .section-title{
-color: var(--primary-text-color);
-font-weight: 700;
+   color: var(--primary-text-color);
+   font-weight: 700;
    font-size: 36px;
    line-height: 1.17;
    text-align: center;
    margin-bottom: 50px;
 }
+
+/* benefits */
 .benefits-list .title{
    color: var(--primary-text-color);
    font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-  margin-bottom: 10px;
-      text-transform: uppercase;
+   font-size: 14px;
+   line-height: 1.14;
+   margin-bottom: 10px;
+   text-transform: uppercase;
 }
+
 .benefits-list .description{
    color: var(--secondary-text-color);
    
       font-size: 14px;
       line-height: 1.71;
 }
+
+.benefits-list {
+   display: flex;
+}
+.benefits-list .item{
+   width: 270px;
+}
+.benefits-list .item:not(:last-child){
+   margin-right: 30px;
+}
+
+
+/* what we do */
+.we-do{
+   display: flex;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.we-do .img:not(:last-child){
+ margin-right: 30px;
+}
+
+/* staff */
+
 .staff{
    background-color: var(--primary-button-color);
    
 }
-.photo{
+/* .photo{
    margin-bottom: 30px;
-}
+} */
 .staff-list .name{
    color: var(--primary-text-color);
    font-weight: 500;
-      font-size: 16px;
-      line-height: 1.19;
-    margin-bottom: 10px;   
-      }
+   font-size: 16px;
+   line-height: 1.19;
+   margin-bottom: 10px;   
+}
 .staff-list .profession{
    color: var(--secondary-text-color);
    font-size: 16px;
       line-height: 1.19;
+}
+
+.staff-list{
+   display: flex;
+  
+}
+.staff-list .item:not(:last-child){
+   margin-right: 30px;
+}
+.staff-list .item{
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+   background-color: #fff;
+}
+.staff-list .info{
+   padding: 30px 0;
+   text-align: center;
 }
 
 /* portfolio */
