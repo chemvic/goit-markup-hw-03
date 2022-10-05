@@ -177,6 +177,10 @@ color: var(--accent-color);
 .basement .item:not(:last-child){
    margin-bottom: 9px;
 }
+.basement .item:last-child{
+   margin-bottom: 0px;
+}
+
 
  /* Hero index*/
  .hero{
