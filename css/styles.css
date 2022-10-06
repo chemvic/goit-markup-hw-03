@@ -102,12 +102,10 @@ color: var(--primary-text-color);
       line-height: 1.14;
       letter-spacing: 0.02em;
       text-decoration: none;
-           
- }
+   }
  .site-nav .link.current {
   color: var(--accent-color);
-  
- }
+   }
 
  .site-nav .link:hover,
  .site-nav .link:focus {
@@ -121,10 +119,7 @@ color: var(--primary-text-color);
  }
  .contacts .item + .item{
      margin-left:50px;
-     
- }
-
-
+      }
  .contacts .link {
 color: var(--secondary-text-color);
 font-weight: 500;
@@ -275,9 +270,7 @@ img {
    background-color: var(--primary-button-color);
    
 }
-/* .photo{
-   margin-bottom: 30px;
-} */
+
 .staff-list .name{
    color: var(--primary-text-color);
    font-weight: 500;
@@ -314,7 +307,7 @@ img {
 
 /* button */
 .pointer{
-                  cursor: pointer;
+ cursor: pointer;
  }
 .button{
 color: var(--primary-text-color);
@@ -371,43 +364,34 @@ margin-right: 8px;
    color: var(--secondary-text-color);
    font-size: 16px;
       line-height: 1.88;  
-      /* padding-left: 24px;  
-      margin-bottom: 20px;  */
 }
 .services{
     text-decoration: none;
 }
-/* .service-photo{
-   margin-bottom: 20px;
-} */
+
 .services .list-title{
    margin-bottom:4px;
-   /* padding-left: 24px; */
 }
 .cart{
    width: 370px;
-  
-  
-}
+    }
 
 .service-list{
    display: flex;
    flex-wrap: wrap;
-   /* gap:  30px; */
-}
+ }
 .service-item {
    margin-right: 30px;
-   /* margin-bottom: 30px; */
-}
-.service-item:not(:last-child(-n+3)){
-    margin-bottom: 30px;
-  } 
+ }
+
 .service-item:nth-child(3n){
    margin-right: 0;
+}
+.service-item:not(:nth-last-child(-n + 3)) {
+   margin-bottom: 30px;
 }
 .cart-info{
    padding: 20px 24px;
    border: 1px solid var(--border-cart-color);
   border-top: 0;
 }
-
