@@ -188,6 +188,7 @@ color: var(--accent-color);
 
  }
 .hero-title{
+   max-width: 696px;
    color: var(--primary-white-color);
       font-weight: 900;
       font-size: 44px;
@@ -195,7 +196,7 @@ color: var(--accent-color);
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      margin-bottom: 30px;
+      margin:0 auto 30px;
      }
 .button-hero {
    color: var(--primary-white-color);
@@ -209,7 +210,7 @@ color: var(--accent-color);
    border-radius: 4px;
    padding: 10px 32px;
    border:0;
-}
+  }
 
 /* sections index*/
 .section-title{
